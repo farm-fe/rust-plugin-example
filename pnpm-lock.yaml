@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@farmfe/plugin-tools':
+    specifier: latest
+    version: 0.0.1
+
+packages:
+
+  /@farmfe/plugin-tools@0.0.1:
+    resolution: {integrity: sha512-Oa4ltAT23ueI18eeA1DT85uutJxqzkvHv5C/CyawwBQYfWJ5otg0KPXBPPwqemw79LI1CpmckSaMvv6Lai/Hkw==}
+    hasBin: true
+    dev: true
