@@ -1,7 +1,8 @@
 name: Cross Build On Linux
 on:
-  branches:
-    - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   call-rust-build:
