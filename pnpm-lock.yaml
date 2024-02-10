@@ -7,11 +7,19 @@ settings:
 devDependencies:
   '@farmfe/plugin-tools':
     specifier: latest
-    version: 0.0.1
+    version: 0.0.2
 
 packages:
 
-  /@farmfe/plugin-tools@0.0.1:
-    resolution: {integrity: sha512-Oa4ltAT23ueI18eeA1DT85uutJxqzkvHv5C/CyawwBQYfWJ5otg0KPXBPPwqemw79LI1CpmckSaMvv6Lai/Hkw==}
+  /@farmfe/plugin-tools@0.0.2:
+    resolution: {integrity: sha512-46/x6HU5xPIT+AFc9WQjE4wY1czA0gXkw3a62R6uDH7f8H/ixPaw8EHC0raH8DxNu3zdTx+ClH2mKtHPCvSdQg==}
+    hasBin: true
+    dependencies:
+      '@napi-rs/cli': 2.18.0
+    dev: true
+
+  /@napi-rs/cli@2.18.0:
+    resolution: {integrity: sha512-lfSRT7cs3iC4L+kv9suGYQEezn5Nii7Kpu+THsYVI0tA1Vh59LH45p4QADaD7hvIkmOz79eEGtoKQ9nAkAPkzA==}
+    engines: {node: '>= 10'}
     hasBin: true
     dev: true
