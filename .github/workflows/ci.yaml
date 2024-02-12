@@ -21,3 +21,5 @@ jobs:
 
             test -f ./npm/${abi}/index.farm
           done
+      - name: Test Example
+        run: cd example && pnpm i && pnpm build
