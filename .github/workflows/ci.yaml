@@ -13,6 +13,7 @@ jobs:
     needs: [call-rust-build]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       # batch download artifacts
       - uses: actions/download-artifact@v3
         with:
