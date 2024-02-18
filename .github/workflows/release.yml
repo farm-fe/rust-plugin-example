@@ -8,7 +8,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   call-rust-build:
-    uses: ./.github/workflows/rust-build.yaml
+    uses: ./.github/workflows/build.yaml
 
   release:
     name: Release
