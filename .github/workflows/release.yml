@@ -40,10 +40,4 @@ jobs:
         run: npm install -g pnpm@8.15.1 && pnpm i --frozen-lockfile
 
       - name: Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: pnpm publish --access public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} && npm publish

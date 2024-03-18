@@ -6,7 +6,7 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "@farmfe/plugin-tools": "^0.0.3"
+    "@farmfe/plugin-tools": "^0.0.4"
   },
   "napi": {
     "name": "farm_plugin_example",
