@@ -1,4 +1,4 @@
-name: Cross Build On Linux
+name: Test Plugin
 on:
   pull_request:
     branches:
@@ -31,6 +31,6 @@ jobs:
         with:
           node-version: 18.x
       - name: Install Dependencies
-        run: npm install -g pnpm@8.15.1
+        run: npm install -g pnpm@9.1.0
       - name: Test Example
-        run: cd example && pnpm i && pnpm build
+        run: cd playground && pnpm i && pnpm build

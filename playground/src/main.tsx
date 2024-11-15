@@ -4,11 +4,11 @@ import reactLogo from "./assets/react.svg";
 import FarmLogo from "./assets/logo.png";
 export function Main() {
   const [count, setCount] = useState(0);
-
+  console.log("rendering Main component")
   return (
     <>
       <div>
-        <a href="https://farm-fe.github.io/" target="_blank">
+        <a href="https://farmfe.org/" target="_blank">
           <img src={FarmLogo} className="logo" alt="Farm logo" />
         </a>
         <a href="https://react.dev" target="_blank">
